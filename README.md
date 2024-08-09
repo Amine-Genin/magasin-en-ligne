@@ -28,7 +28,7 @@ Users can choose a payment method from a dropdown menu and simulate a payment pr
 1-Clone the Repository:
 bash
 Copier le code :
-git clone https://github.com/yourusername/magasin-en-ligne.git
+git clone https://github.com/Amine-Genin/magasin-en-ligne.git
 
 2-Open the Project:
 Open the index.html file in your browser to view and interact with the online store.
