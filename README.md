@@ -8,15 +8,17 @@ Login functionality for users and admins.
 Different features available based on user role (admin or regular user).
 Product Management:
 
+ADMIN :
+login : admin
+password : admin
 Admins can add new products, specifying product name, price, category, and image.
 Products are organized by category and displayed dynamically on the page.
 Shopping Cart:
 
+USER :
+login : user
+password : user
 Users can add products to their cart, view the total price, and proceed to checkout.
 Payment Processing:
 
 Users can choose a payment method from a dropdown menu and simulate a payment process.
-Responsive Design:
-
-The layout adapts to different screen sizes, with login inputs set to 20% of the screen width and the payment method dropdown set to 30% of the screen width.
-The design includes hover effects, animations, and transitions for a smooth user experience.
