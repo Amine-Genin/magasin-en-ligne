@@ -22,3 +22,23 @@ Users can add products to their cart, view the total price, and proceed to check
 Payment Processing:
 
 Users can choose a payment method from a dropdown menu and simulate a payment process.
+
+
+##How to Use
+1-Clone the Repository:
+bash
+Copier le code :
+git clone https://github.com/yourusername/magasin-en-ligne.git
+
+2-Open the Project:
+Open the index.html file in your browser to view and interact with the online store.
+
+3-Admin Login:
+Use the credentials admin/admin to log in as an admin and access product management features.
+
+Customization
+The CSS can be easily customized to change the theme, layout, or specific element styles.
+The JavaScript code is modular and can be extended with additional features like product filtering, more detailed payment processing, or integration with a backend service.
+
+License
+This project is open-source and available under the MIT License.
