@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magasin en Ligne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="store-container">
+    <!-- Login Section -->
+    <div class="login-section">
+        <h2>Connexion</h2>
+        <input type="text" id="username" placeholder="Nom d'utilisateur" class="styled-input login-input">
+        <input type="password" id="password" placeholder="Mot de passe" class="styled-input login-input">
+        <button onclick="login()" class="dynamic-button">Se connecter</button>
+        <p id="login-message"></p>
+    </div>
+
+    <!-- Logout Section -->
+    <div class="logout-section" style="display: none;">
+        <h2>Bienvenue, <span id="user-role"></span></h2>
+        <button onclick="logout()" class="dynamic-button">Se déconnecter</button>
+    </div>
+
+    <header>
+        <img src="https://logos-world.net/wp-content/uploads/2021/03/Lamborghini-Logo.png" alt="Logo du Magasin" class="store-logo">
+        <h1>Magasin en Ligne</h1>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Rechercher un produit..." class="styled-input">
+        <button onclick="searchProduct()" class="dynamic-button">Rechercher</button>
+    </div>
+
+    <!-- Add Product Section (Visible only to logged-in admins) -->
+    <div class="add-product-section" style="display: none;">
+        <h2>Ajouter un Produit</h2>
+        <input type="text" id="new-product-name" placeholder="Nom du produit" class="styled-input">
+        <input type="number" id="new-product-price" placeholder="Prix" class="styled-input">
+        <input type="text" id="new-product-category" placeholder="Catégorie" class="styled-input">
+        <input type="text" id="new-product-image" placeholder="Lien de l'image" class="styled-input">
+        <button onclick="addNewProduct()" class="dynamic-button">Ajouter Produit</button>
+    </div>
+
+    <!-- Product Categories -->
+    <div id="categories-container">
+        <!-- Categories will be dynamically generated here -->
+    </div>
+
+    <!-- Shopping Cart -->
+    <div class="cart">
+        <h2>Panier</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: <span id="total-price">0</span>€</p>
+    </div>
+
+    <!-- Payment Method -->
+    <div class="payment-method">
+        <h2>Choisissez une méthode de paiement</h2>
+        <select id="payment-method" class="styled-input payment-input">
+            <option value="carte">Carte de crédit</option>
+            <option value="paypal">PayPal</option>
+            <option value="virement">Virement bancaire</option>
+        </select>
+        <button onclick="processPayment()" class="dynamic-button">Payer</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.store-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.store-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.store-logo:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    color: #00ffcc;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.product {
+    background: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    flex: 1 1 18%; /* Adjust this percentage to fit 5 products in a row */
+    max-width: 18%;
+    box-sizing: border-box;
+}
+
+.product:nth-child(odd) {
+    order: 2; /* Move odd products to the right */
+}
+
+.product:nth-child(even) {
+    order: 1; /* Move even products to the left */
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-image:hover {
+    transform: scale(1.1);
+}
+
+.dynamic-button {
+    padding: 10px 20px;
+    background-color: #00ffcc;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+.dynamic-button:hover {
+    background-color: #00e6b3;
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+.styled-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #2c2c2c;
+    color: #fff;
+    margin: 5px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-input {
+    width: 30%; /* Sets the width of login inputs to 20% of the screen width */
+    min-width: 150px; /* Ensures a minimum size for small screens */
+    display: block;
+    margin: 0 auto;
+}
+
+.payment-input {
+    width: 30%; /* Sets the width of payment select to 30% of the screen width */
+    min-width: 200px; /* Ensures a minimum size for small screens */
+    display: block;
+    margin: 0 auto;
+}
+
+.styled-input:focus {
+    border-color: #00ffcc;
+    box-shadow: 0 0 10px #00ffcc;
+    outline: none;
+}
+
+.cart, .payment-method {
+    margin-top: 20px;
+    padding: 20px;
+    background: #292929;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+select.styled-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #2c2c2c url('data:image/svg+xml;utf8,<svg fill="%23fff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+    background-size: 16px 16px;
+}
